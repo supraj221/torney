@@ -3,23 +3,28 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 125vh;
   margin: 0;
   background-color: #f4f4f9;
+  padding: 20px; /* Add padding to prevent content from touching screen edges */
+  box-sizing: border-box;
 }
 
 .card {
+  
   background: #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  max-width: 400px;
+  max-width: 100%;
+  box-sizing: border-box;
   text-align: center;
 }
 
 h1 {
   font-size: 24px;
   color: #333;
+  margin-bottom: 10px;
 }
 
 .rating {
@@ -31,9 +36,10 @@ h1 {
 .type {
   font-size: 16px;
   color: #777;
+  margin-bottom: 20px;
 }
 
-.address, .hours {
+.address, .doctor, .hours, .contact, .services, .note {
   margin: 20px 0;
   text-align: left;
 }
@@ -47,10 +53,40 @@ h2 {
 p {
   font-size: 16px;
   color: #444;
+  margin: 5px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-size: 16px;
+  color: #444;
+  margin: 5px 0;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.note {
+  font-size: 16px;
+  color: #444;
+  text-align: center;
+  font-weight: bold;
 }
 
 .contact {
-  margin: 20px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .call-button, .location-button {
